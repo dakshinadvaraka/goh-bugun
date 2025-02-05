@@ -63,17 +63,23 @@ h1 {
     margin: 20px auto;
     height: 780px; /* Increased from 520px by 50% */
     overflow: hidden; /* Contain everything */
+    /* Center the carousel in the viewport if needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 50vh; /* optional: makes carousel stretch to full viewport height */
 }
 
 .carousel-container {
     position: relative;
-    width: 50%;
+    width: 100%;
     height: 70%;
     background: #000000;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0;
+    /* padding: 0; */
+    margin: auto;  /* centers the container horizontally */
     object-fit: contain;
 }
 
@@ -89,7 +95,7 @@ h1 {
     object-fit: contain;
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
 }
 
 .carousel-slide.active {

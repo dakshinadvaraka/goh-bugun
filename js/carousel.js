@@ -15,14 +15,4 @@ document.addEventListener('DOMContentLoaded', function() {
         // Auto advance the slides every 7 seconds
         setInterval(() => showSlide(currentSlide + 1), 7000);
     });
-
-    var dropdowns = document.querySelectorAll('.dropdown');
-    dropdowns.forEach(function(dropdown) {
-        dropdown.addEventListener('mouseover', function() {
-            this.querySelector('.dropdown-content').style.display = 'block';
-        });
-        dropdown.addEventListener('mouseout', function() {
-            this.querySelector('.dropdown-content').style.display = 'none';
-        });
-    });
 });
